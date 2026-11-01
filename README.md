@@ -12,7 +12,7 @@ Live site: https://liorgioilanan.com
 | --- | --- |
 | `index.html` | The whole site: markup, styles and scripts in one file |
 | `img/` | Portrait, work screenshots, graphics and certificates (WebP) |
-| `og-image.png` | Preview image shown when the link is shared |
+| `og-image.jpg` | Preview image shown when the link is shared (linked from GitHub's raw file host so it loads even while the domain is changing) |
 | `favicon.svg` | Browser tab icon |
 | `404.html` | Page shown for broken links |
 | `netlify.toml` | Netlify settings (no build step, publish the repo root) |
