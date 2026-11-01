@@ -26,11 +26,14 @@ No build tools or dependencies. Fonts load from Google Fonts.
 - **Colors:** change the tokens at the top of the `<style>` block (`--sun`, `--ink`, `--bg`, and so on).
 - **Preview locally:** open `index.html` in a browser, or run `python3 -m http.server` in this folder and visit http://localhost:8000.
 
-## Deploy on Netlify
+## Hosting
 
-1. Sign in at https://app.netlify.com with GitHub.
-2. **Add new project → Import an existing project → GitHub**, then pick this repository.
-3. Leave the build command empty and the publish directory as `.` (both come from `netlify.toml`), then click **Deploy**.
-4. Under **Project configuration → Change project name**, set the name to `liorgio-smm-portfolio` so the URL matches the share-preview tags in `index.html`.
+The site is served by **GitHub Pages** from the `main` branch (repository root).
+`CNAME` holds the custom domain and `.nojekyll` tells Pages to serve the files as they are.
 
-Every push to `main` redeploys the site automatically.
+1. **Settings → Pages → Build and deployment:** Source = Deploy from a branch, Branch = `main`, folder `/ (root)`.
+2. **Custom domain:** `liorgioilanan.com`, then tick **Enforce HTTPS** once it becomes available.
+3. **DNS at the registrar:** four `A` records on `@` → `185.199.108.153`, `185.199.109.153`,
+   `185.199.110.153`, `185.199.111.153`, and a `CNAME` on `www` → `jiyoilnn.github.io`.
+
+Every push to `main` republishes the site. `netlify.toml` is kept only in case the site moves back to Netlify.
