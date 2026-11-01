@@ -362,6 +362,24 @@ button.float:hover,button.float:focus-visible{scale:1.04;box-shadow:0 2px 6px rg
 .toolset .note{margin-top:14px;font:500 .72rem/1.5 var(--mono);color:var(--muted)}
 @media (max-width:1000px){.toolsets{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.toolsets{grid-template-columns:minmax(0,1fr)}}
+.toolgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-bottom:24px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:22px 14px 18px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;box-shadow:var(--shadow-sm);transition:translate .25s,box-shadow .25s}
+.tool:hover{translate:0 -4px;box-shadow:var(--shadow-lg)}
+.tool .logo{height:64px;width:100%;display:grid;place-items:center;margin-bottom:10px}
+.tool .logo img{width:auto;height:auto;max-height:60px;max-width:72%;object-fit:contain}
+.tool .logo.wide img{max-height:34px;max-width:92%}
+.tool b{font-weight:700;font-size:1rem;line-height:1.25}
+.tool .use{font-size:.84rem;line-height:1.35;color:var(--muted)}
+.tool .proof{margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:999px;background:var(--cream);border:1px solid #EED79A;font:600 .64rem/1.2 var(--mono);letter-spacing:.04em;color:var(--ink);text-decoration:none}
+.tool .proof .ic{width:12px;height:12px}
+.tool a.proof:hover{background:var(--sun)}
+.also{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:12px}
+.also > span{font:600 .7rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.also ul{display:flex;flex-wrap:wrap;gap:8px}
+.also li{padding:7px 12px;border-radius:10px;background:var(--card);border:1px solid var(--line);font-weight:600;font-size:.9rem}
+.tools-note{margin-bottom:clamp(48px,6vw,80px)}
+@media (max-width:1000px){.toolgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:600px){.toolgrid{gap:10px}.tool{padding:16px 8px 14px}.tool .logo{height:48px;margin-bottom:6px}.tool .logo img{max-height:44px}.tool .logo.wide img{max-height:22px}.tool b{font-size:.86rem}.tool .use{font-size:.74rem}.tool .proof{font-size:.56rem;padding:3px 7px}}
 .certs-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:24px}
 .certs-head h3{font-size:clamp(1.6rem,1.2rem + 1.4vw,2.3rem)}
 .certs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
@@ -1030,16 +1048,27 @@ button.float:hover,button.float:focus-visible{scale:1.04;box-shadow:0 2px 6px rg
   <div class="wrap">
     <div class="section-head rv">
       <p class="eyebrow">Tools &amp; certificates</p>
-      <h2 class="h2" id="tools-title">The kit I use <mark>every week.</mark></h2>
+      <h2 class="h2" id="tools-title">Tools &amp; platforms I use <mark>every week.</mark></h2>
     </div>
-    <div class="toolsets">
-      <div class="toolset rv"><h3>Create</h3><ul><li>CapCut</li><li>Canva</li><li class="c">Photoshop</li><li class="c">Illustrator</li><li class="c">InDesign</li></ul><p class="note">Highlighted: certified (Advanced). CapCut edits appear in the DDTank Haven work.</p></div>
-      <div class="toolset rv"><h3>Plan &amp; schedule</h3><ul><li>Agorapulse</li><li>Buffer</li><li>Hootsuite</li><li>Google Trends</li><li>Google Workspace</li></ul><p class="note">Scheduling, social inbox and trend research.</p></div>
-      <div class="toolset rv"><h3>Publish &amp; measure</h3><ul><li>Meta Business Suite</li><li>TikTok Studio</li><li>YouTube Studio</li></ul><p class="note">Every number on this page comes from these dashboards.</p></div>
-      <div class="toolset rv"><h3>Community</h3><ul><li>Discord</li><li>MEE6</li><li>Reaction roles</li><li>Giveaways</li></ul><p class="note">See the DDTank Haven Discord screenshots above.</p></div>
-      <div class="toolset rv"><h3>AI</h3><ul><li>Claude</li><li>ChatGPT Codex</li><li>Gemini</li><li>Meta AI</li></ul><p class="note">Claude helped build Friesta POS and this site.</p></div>
-      <div class="toolset rv"><h3>Build &amp; host</h3><ul><li>GitHub</li><li>Netlify</li></ul><p class="note"><a class="link" href="https://github.com/Jiyoilnn/FriestaPOS" target="_blank" rel="noopener">Friesta POS code on GitHub <svg class="ic"><use href="#i-out"/></svg></a></p></div>
-    </div>
+    <ul class="toolgrid rv" aria-label="Tools and platforms">
+        <li class="tool"><span class="logo"><img src="img/tools/claude.webp" width="141" height="141" alt="" loading="lazy"></span><b>Claude</b><span class="use">AI assistant</span><span class="proof">Built Friesta POS</span></li>
+        <li class="tool"><span class="logo"><img src="img/tools/chatgpt.webp" width="148" height="148" alt="" loading="lazy"></span><b>ChatGPT / Codex</b><span class="use">AI and coding assistant</span></li>
+        <li class="tool"><span class="logo"><img src="img/tools/meta-ai.webp" width="108" height="108" alt="" loading="lazy"></span><b>Meta AI</b><span class="use">AI assistant</span></li>
+        <li class="tool"><span class="logo"><img src="img/tools/gemini.webp" width="136" height="136" alt="" loading="lazy"></span><b>Gemini</b><span class="use">AI assistant</span></li>
+        <li class="tool"><span class="logo wide"><img src="img/tools/capcut.webp" width="248" height="54" alt="" loading="lazy"></span><b>CapCut</b><span class="use">Video editing</span><span class="proof">DDTank Haven edits</span></li>
+        <li class="tool"><span class="logo"><img src="img/tools/canva.webp" width="148" height="148" alt="" loading="lazy"></span><b>Canva</b><span class="use">Design</span></li>
+        <li class="tool"><span class="logo"><img src="img/tools/adobe-cc.webp" width="152" height="148" alt="" loading="lazy"></span><b>Adobe Creative Cloud</b><span class="use">Photoshop, Illustrator, InDesign</span><span class="proof">Certified, Advanced</span></li>
+        <li class="tool"><span class="logo wide"><img src="img/tools/google-workspace.webp" width="242" height="35" alt="" loading="lazy"></span><b>Google Workspace</b><span class="use">Docs, Sheets, Drive</span></li>
+        <li class="tool"><span class="logo"><img src="img/tools/google-trends.webp" width="69" height="51" alt="" loading="lazy"></span><b>Google Trends</b><span class="use">Trend research</span></li>
+        <li class="tool"><span class="logo wide"><img src="img/tools/agorapulse.webp" width="237" height="52" alt="" loading="lazy"></span><b>Agorapulse</b><span class="use">Scheduling and social inbox</span></li>
+        <li class="tool"><span class="logo"><img src="img/tools/trello.webp" width="148" height="148" alt="" loading="lazy"></span><b>Trello</b><span class="use">Project planning</span></li>
+        <li class="tool"><span class="logo"><img src="img/tools/buffer.webp" width="101" height="113" alt="" loading="lazy"></span><b>Buffer</b><span class="use">Social publishing</span></li>
+        <li class="tool"><span class="logo wide"><img src="img/tools/hootsuite.webp" width="233" height="50" alt="" loading="lazy"></span><b>Hootsuite</b><span class="use">Social media management</span></li>
+        <li class="tool"><span class="logo"><img src="img/tools/github.webp" width="151" height="147" alt="" loading="lazy"></span><b>GitHub</b><span class="use">Version control</span><a class="proof" href="https://github.com/Jiyoilnn/FriestaPOS" target="_blank" rel="noopener">Friesta POS code <svg class="ic"><use href="#i-out"/></svg></a></li>
+        <li class="tool"><span class="logo"><img src="img/tools/linkedin.webp" width="173" height="148" alt="" loading="lazy"></span><b>LinkedIn</b><span class="use">Professional networking</span></li>
+    </ul>
+    <div class="also rv"><span>Also in my workflow</span><ul><li>Meta Business Suite</li><li>TikTok Studio</li><li>YouTube Studio</li><li>Discord</li><li>MEE6</li><li>Netlify</li></ul></div>
+    <p class="src tools-note">Tags show where a tool appears in the work on this page. Every number here comes from Meta Business Suite and TikTok Studio.</p>
 
     <div class="certs-head rv">
       <h3>Certificates</h3>
