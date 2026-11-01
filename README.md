@@ -4,7 +4,7 @@ Portfolio site for Liorgio Ilanan, a Philippines-based Social Media & Community 
 It covers Friesta (Facebook and TikTok), DDTank Haven, Newborn Vape Lounge and the
 AI-assisted Friesta POS, with figures taken from Meta Business Suite and TikTok Studio.
 
-Live site: https://liorgio-smm-portfolio.netlify.app
+Live site: https://liorgioilanan.com
 
 ## What's in here
 
