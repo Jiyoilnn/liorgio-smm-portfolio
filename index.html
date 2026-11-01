@@ -335,9 +335,8 @@ button.float:hover,button.float:focus-visible{scale:1.04;box-shadow:0 2px 6px rg
 
 /* ---------- about + timeline ---------- */
 .about{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(32px,6vw,96px);align-items:start}
-.about-photo{position:sticky;top:calc(110px + env(safe-area-inset-top,0px));border-radius:var(--r-lg);background:var(--cream);border:1px solid var(--line);overflow:hidden;box-shadow:var(--shadow-lg)}
-.about-photo::before{content:"";position:absolute;left:50%;bottom:-18%;width:96%;aspect-ratio:1;translate:-50% 0;border-radius:50%;background:var(--sun)}
-.about-photo img{position:relative;width:100%}
+.about-photo{position:sticky;top:calc(110px + env(safe-area-inset-top,0px));border-radius:var(--r-lg);background:#C3CBD5;border:1px solid var(--line);overflow:hidden;box-shadow:18px 18px 0 var(--sun),18px 18px 0 1px var(--sun-ledge),var(--shadow-lg)}
+.about-photo img{position:relative;width:100%;aspect-ratio:1;object-fit:cover}
 .about-photo .loc{position:absolute;left:16px;bottom:16px;z-index:1;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font:600 .78rem/1 var(--mono);box-shadow:var(--shadow-sm)}
 .about-body{display:flex;flex-direction:column;gap:20px;min-width:0}
 .about-body > p{color:#3E4246;max-width:62ch}
@@ -484,7 +483,7 @@ button.float:hover,button.float:focus-visible{scale:1.04;box-shadow:0 2px 6px rg
 
 <header class="site-head" id="site-head">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Liorgio Ilanan, back to top"><span class="brand-mark" aria-hidden="true">LI</span><span>Liorgio<b>.</b></span></a>
+    <a class="brand" href="#top" aria-label="Liorgio Ilanan, back to top"><span class="brand-mark" aria-hidden="true">LI</span><span>Liorgio Ilanan<b>.</b></span></a>
     <nav aria-label="Main">
       <ul class="pill">
         <li><a href="#work">Work</a></li>
@@ -1024,7 +1023,7 @@ button.float:hover,button.float:focus-visible{scale:1.04;box-shadow:0 2px 6px rg
 <section class="band" id="experience" aria-labelledby="about-title">
   <div class="wrap about">
     <figure class="about-photo rv" style="margin:0">
-      <img src="img/portrait-bust.webp" width="720" height="720" alt="Portrait of Liorgio Ilanan" loading="lazy">
+      <img src="img/portrait-about.webp" width="1000" height="1000" alt="Liorgio Ilanan in a navy blazer and white shirt" loading="lazy">
       <figcaption class="loc"><svg class="ic" style="width:15px;height:15px"><use href="#i-pin"/></svg>Based in the Philippines</figcaption>
     </figure>
     <div class="about-body">
@@ -1138,7 +1137,7 @@ button.float:hover,button.float:focus-visible{scale:1.04;box-shadow:0 2px 6px rg
 <footer class="foot">
   <div class="wrap">
     <div style="display:grid;gap:10px">
-      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">LI</span><span>Liorgio<b>.</b></span></a>
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">LI</span><span>Liorgio Ilanan<b>.</b></span></a>
       <p class="small">© 2026 Liorgio Ilanan. Figures come from Meta Business Suite and TikTok Studio screenshots, with date ranges shown. The Friesta POS preview uses demo menu data.</p>
     </div>
     <nav aria-label="Footer">
