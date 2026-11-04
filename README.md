@@ -1,8 +1,10 @@
 # Liorgio Ilanan · Social Media & Community Manager
 
 Portfolio site for Liorgio Ilanan, a Philippines-based Social Media & Community Manager.
-It covers Friesta (Facebook and TikTok), DDTank Haven, Newborn Vape Lounge and the
-AI-assisted Friesta POS, with figures taken from Meta Business Suite and TikTok Studio.
+It covers Friesta (Facebook and TikTok), the Thick Cut Fries Facebook campaign plan,
+DDTank Haven, Newborn Vape Lounge and the AI-assisted Friesta POS, with figures taken
+from Meta Business Suite and TikTok Studio. A Certifications section links each Meta
+(Coursera) and Udemy certificate to its verification page.
 
 Live site: https://liorgioilanan.com
 
@@ -11,10 +13,15 @@ Live site: https://liorgioilanan.com
 | Path | What it is |
 | --- | --- |
 | `index.html` | The whole site: markup, styles and scripts in one file |
-| `img/` | Portrait, work screenshots, graphics and certificates (WebP) |
+| `img/` | Portrait, work screenshots, ads, strategy slides and certificates (WebP) |
 | `og-image.jpg` | Preview image shown when the link is shared (linked from GitHub's raw file host so it loads even while the domain is changing) |
-| `favicon.svg` | Browser tab icon |
+| `favicon.svg`, `apple-touch-icon.png` | Browser tab and home-screen icons |
+| `sitemap.xml`, `robots.txt` | Tell search engines what to index. Update `<lastmod>` in the sitemap after a big change |
 | `404.html` | Page shown for broken links |
+
+The `<head>` of `index.html` holds the search and sharing details: title, description,
+canonical URL, Open Graph tags and JSON-LD structured data (Person with credentials and
+profile links, ProfilePage and FAQPage). If you edit the FAQ, update the FAQPage answers too.
 | `netlify.toml` | Netlify settings (no build step, publish the repo root) |
 
 No build tools or dependencies. Fonts load from Google Fonts.
