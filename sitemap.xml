@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://liorgioilanan.com/</loc>
-    <lastmod>2026-11-12</lastmod>
-    <image:image><image:loc>https://liorgioilanan.com/img/portrait-pro.webp</image:loc></image:image>
-    <image:image><image:loc>https://liorgioilanan.com/img/fr-insights.webp</image:loc></image:image>
-    <image:image><image:loc>https://liorgioilanan.com/img/tt-overview-28.webp</image:loc></image:image>
-    <image:image><image:loc>https://liorgioilanan.com/img/ad-thick-square.webp</image:loc></image:image>
-    <image:image><image:loc>https://liorgioilanan.com/img/badge-meta-dma.webp</image:loc></image:image>
-    <image:image><image:loc>https://liorgioilanan.com/img/cert-meta-intro.webp</image:loc></image:image>
-    <image:image><image:loc>https://liorgioilanan.com/img/cert-meta-smm.webp</image:loc></image:image>
-    <image:image><image:loc>https://liorgioilanan.com/img/cert-meta-ads.webp</image:loc></image:image>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://liorgioilanan.com/</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://liorgioilanan.com/work.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://liorgioilanan.com/showcase.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://liorgioilanan.com/design.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://liorgioilanan.com/services.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://liorgioilanan.com/about.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://liorgioilanan.com/contact.html</loc><lastmod>2026-11-12</lastmod></url>
 </urlset>

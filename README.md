@@ -11,8 +11,9 @@ Live site: https://liorgioilanan.com
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | The whole site: markup, styles and scripts in one file |
-| `img/` | Portrait, work screenshots, ads, strategy slides and certificates (WebP) |
+| `index.html`, `work.html`, `showcase.html`, `design.html`, `services.html`, `about.html`, `contact.html` | The pages of the site |
+| `site.css`, `site.js` | Styles and scripts shared by every page |
+| `img/` | The studio hero video and its frames, work screenshots, post designs and certificates |
 | `og-image.jpg` | Preview image shown when the link is shared (linked from GitHub's raw file host so it loads even while the domain is changing) |
 | `favicon.svg`, `apple-touch-icon.png` | Browser tab and home-screen icons |
 | `sitemap.xml`, `robots.txt` | Tell search engines what to index. Update `<lastmod>` in the sitemap after a big change |
@@ -29,7 +30,7 @@ No build tools or dependencies. Fonts load from Google Fonts.
 
 - **Text and numbers:** search `index.html` for the words you want to change.
 - **Images:** add the file to `img/`, then point an `<img src="img/...">` at it.
-- **Colors:** change the tokens at the top of the `<style>` block (`--sun`, `--ink`, `--bg`, and so on).
+- **Colors:** change the tokens at the top of `site.css` (`--sun`, `--ink`, `--bg`, and so on).
 - **Preview locally:** open `index.html` in a browser, or run `python3 -m http.server` in this folder and visit http://localhost:8000.
 
 ## Hosting
