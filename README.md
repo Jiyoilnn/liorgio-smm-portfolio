@@ -1,9 +1,8 @@
 # Liorgio Ilanan · Social Media & Community Manager
 
 Portfolio site for Liorgio Ilanan, a Philippines-based Social Media & Community Manager.
-It covers Friesta (Facebook and TikTok), the Thick Cut Fries Facebook campaign plan,
-DDTank Haven, Newborn Vape Lounge and the AI-assisted Friesta POS, with figures taken
-from Meta Business Suite and TikTok Studio. A Certifications section features the Meta Certified Digital Marketing Associate credential (verified on Credly) and links each Meta
+It covers Friesta (Facebook and TikTok), DDTank Haven and Newborn Vape Lounge, with
+figures taken from Meta Business Suite and TikTok Studio. A Certifications section features the Meta Certified Digital Marketing Associate credential (verified on Credly) and links each Meta
 (Coursera), Google and Udemy certificate to its verification page. A Graphic design section shows 40 picks from the Friesta post design library.
 
 Live site: https://liorgioilanan.com
