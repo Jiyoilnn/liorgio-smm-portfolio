@@ -1,0 +1,38 @@
+.capcut-reels {
+  background: var(--alt);
+}
+.capcut-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(190px, .65fr);
+  align-items: start;
+  gap: clamp(16px, 2.6vw, 32px);
+}
+.capcut-card {
+  justify-items: start;
+  scroll-snap-align: start;
+}
+.capcut-card .reel-frame {
+  width: 100%;
+  background: #14203f;
+}
+.capcut-wide .reel-frame { aspect-ratio: 16 / 9; }
+.capcut-classic .reel-frame { aspect-ratio: 4 / 3; }
+.capcut-card h3 {
+  margin-top: 4px;
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  line-height: 1.2;
+}
+.capcut-card .link { font-size: .9rem; }
+@media (max-width: 760px) {
+  .capcut-row {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: min(360px, 81vw);
+    gap: 14px;
+    overflow-x: auto;
+    padding: 4px 4px 16px;
+    scroll-padding-inline: 4px;
+    scroll-snap-type: x proximity;
+  }
+  .capcut-short .reel-frame { max-width: 260px; }
+}
