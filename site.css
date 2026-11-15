@@ -698,3 +698,10 @@ main:not(.pg-index) .section-head .eyebrow{display:none}
 .cta-pair{display:flex;flex-wrap:wrap;gap:10px}
 @media (max-width:860px){.beats{grid-template-columns:repeat(2,minmax(0,1fr))}.plan.three{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:560px){.vid-grid{grid-template-columns:minmax(0,1fr);max-width:400px;margin-inline:auto}.beats{grid-template-columns:minmax(0,1fr)}}
+
+/* AI-made videos (Showcase) */
+.reel-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:var(--navy)}
+.ai-cap{display:grid;gap:2px;margin:0}
+.ai-cap b{font-size:1rem;line-height:1.3;color:var(--ink)}
+.ai-cap span{font-size:.88rem;color:var(--muted)}
+.ai-videos .reel-card{align-content:start}
