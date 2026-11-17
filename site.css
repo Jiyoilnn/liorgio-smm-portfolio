@@ -93,6 +93,7 @@ mark{background:var(--sun);color:var(--ink);padding:0 .14em;border-radius:.14em;
 .mobile-menu .btn{width:100%;margin-top:8px}
 @media (max-width:920px){.pill{display:none}.menu-btn{display:grid}.nav-end .btn{display:none}}
 @media (min-width:921px){.mobile-menu{display:none!important}}
+@media (min-width:921px) and (max-width:1020px){.pill a{padding-inline:11px}}
 
 /* ---------- hero ---------- */
 .hero{position:relative;overflow-x:clip;padding-block:clamp(24px,4vw,56px) clamp(56px,8vw,104px)}

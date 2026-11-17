@@ -1,0 +1,46 @@
+.cert-hero {
+  background: linear-gradient(125deg, var(--cream), var(--bg) 72%);
+  border-bottom: 1px solid var(--line);
+  padding-block: clamp(44px, 7vw, 88px);
+}
+.cert-hero h1 {
+  font-size: clamp(2.45rem, 8.8vw, 6.1rem);
+  line-height: .98;
+  letter-spacing: -.055em;
+  margin: 12px 0 16px;
+}
+.cert-hero .lead { max-width: 51ch; }
+.professional-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2.5vw, 28px);
+  margin-bottom: clamp(44px, 5vw, 68px);
+}
+.pcert .zoom {
+  width: 100%;
+  padding: clamp(12px, 2.7vw, 26px);
+}
+.pcert .zoom img {
+  aspect-ratio: 1400 / 1082;
+  background: #fff;
+}
+.pcert .vbody {
+  padding: clamp(18px, 2.8vw, 30px);
+  gap: 12px;
+}
+.pcert h3 {
+  font-size: clamp(1.4rem, 1rem + 1.15vw, 2.1rem);
+  line-height: 1.07;
+}
+.pcert .focus {
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+.pcert .btn { margin-top: auto; }
+.pcert .facts { margin-bottom: 4px; }
+.pg-certifications .feat { margin-bottom: 14px; }
+
+@media (max-width: 670px) {
+  .professional-grid { grid-template-columns: minmax(0, 1fr); }
+}
